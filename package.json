@@ -1,0 +1,12 @@
+{
+  "name": "donation-hapi-01",
+  "version": "0.1.0",
+  "description": "An application built using the Hapi framework. This purpose is to accept monertary donations from users.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
