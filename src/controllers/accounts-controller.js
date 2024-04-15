@@ -4,13 +4,13 @@ export const accountsController = {
   index: {
     auth: false,
     handler: function (request, h) {
-      return h.view("Main", { title: "Welcome to Donation" });
+      return h.view("main", { title: "Welcome to Donation" });
     },
   },
   showSignup: {
     auth: false,
     handler: function (request, h) {
-      return h.view("Signup", { title: "Sign up for Donation" });
+      return h.view("signup", { title: "Sign up for Donation" });
     },
   },
   signup: {
@@ -24,7 +24,7 @@ export const accountsController = {
   showLogin: {
     auth: false,
     handler: function (request, h) {
-      return h.view("Login", { title: "Login to Donation" });
+      return h.view("login", { title: "Login to Donation" });
     },
   },
   login: {
