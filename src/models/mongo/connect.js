@@ -9,7 +9,7 @@ const seedLib = mongooseSeeder.default;
 async function seed() {
   const seeder = seedLib(Mongoose);
   const dbData = await seeder.seed(seedData, { dropDatabase: false, dropCollections: true });
-  console.log(dbData);
+  // console.log(dbData);
 }
 
 export function connectMongo(db) {
@@ -20,6 +20,8 @@ export function connectMongo(db) {
   const mongoDb = Mongoose.connection;
 
   db.userStore = userStore;
+  db.candidateStore = candidateStore;
+  db.donationStore = donationStore;
 
   mongoDb.on("error", (err) => {
     console.log(`database connection error: ${err}`);
